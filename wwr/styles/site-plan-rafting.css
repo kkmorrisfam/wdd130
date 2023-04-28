@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Permanent+Marker&family=Poppins&display=swap');
+
+:root {
+    --primary-color: #799496;
+    --secondary-color: #dbb4ad; 
+    --accent1-color: #acc196;
+    --accent2-color: #49475B;
+
+    --heading-font: 'Poppins', sans-serif; 
+    --paragraph-font: 'Chivo', sans-serif;
+    
+    --nav-background-color: #B6C8A9;
+    --nav-link-color: #695658;
+    --nav-hover-link-color: #cedada;
+    --nav-hover-background-color: #695658
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent2-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color)
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
