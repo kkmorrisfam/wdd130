@@ -90,9 +90,9 @@ h1 {
 .hero article img {
     width: 25%;
     height: auto;    
-    position: aboslute;    
+    /* position: absolute;    -> this moves the img to the left, why? */
     float: right;   
-    margin: 10 0 1rem 1rem; 
+    /* margin: 10 1 1rem 1rem;  -> causes an error */
     border: 1px solid #49475B;   
     box-shadow: 0 0 30px #695658;
 }
