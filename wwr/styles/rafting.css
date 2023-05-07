@@ -14,9 +14,13 @@
     --nav-hover-link-color: #cedada;
     --nav-hover-background-color: #695658;
 }
-/* Start on Step 3 #4; look at siteplan css/html for adjustments in color, ect.
-Does this css page need to be refreneced in the about.html?*/
 
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ } */
+ 
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
