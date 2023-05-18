@@ -27,7 +27,7 @@ font-family: 'Poppins', sans-serif; */
 }
 
 
-/* Colors are not showing up on page/  other colors show up, not these - why/*/
+
 body {
     font-family: var(--paragraph-font);
     font-size: 1.2em;    
