@@ -12,7 +12,7 @@ body {
 
 header {
     margin: 0 auto;
-    width: 650 px;
+    /* width: 650 px; */
 }
 
 h1 {
@@ -38,7 +38,7 @@ fieldset {
     display: grid;
     grid-gap: .5rem;
     margin: 1rem;
-    border: 1px solid rgba(0,0,0,0.2)
+    border: 1px solid rgba(0,0,0,0.2);
     padding: 1rem;
 }
 
