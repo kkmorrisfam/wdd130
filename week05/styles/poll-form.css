@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Permanent+Marker&family=Poppins&display=swap');
+
+/* font-family: 'Chivo', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+    --primary-color: rgb(6, 31, 100);
+    --secondary-color: rgb(231, 238, 238); 
+    --accent1-color: #b6c9c3;
+    --accent2-color: #46435f;
+
+    --heading-font: 'Poppins', sans-serif; 
+    --paragraph-font: 'Chivo', sans-serif;
+    
+    --nav-background-color: #B6C8A9;
+    --nav-link-color: #695658;
+    --nav-hover-link-color: #cedada;
+    --nav-hover-background-color: #695658;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Colors are not showing up on page/  other colors show up, not these - why/*/
+body {
+    font-family: var(--paragraph-font);
+    font-size: 1.2em;    
+
+}
+header {
+    margin: 0 auto;
+    width: 650 px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    margin: 1rem;
+    font-size: 1.3em;
+    color: navy;
+    text-align: center;
+}
+
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    display: grid;
+
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,0.2)
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.1em;
+}
+
+label input, button, select, textarea {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+    text-align: rigt;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+
+}
+
+button {
+    margin: 1rem;
+    background-color:darkslateblue;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color:darkslategray;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color:#46435f;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display:grid;
+    align-items: center;
+    justify-content: :center;
+    justify-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+div {
+    padding: 10px;
+}
+
+.button {
+    display:flex;
+    justify-content:center;
+}
+
+.check-box {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
