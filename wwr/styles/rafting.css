@@ -170,9 +170,36 @@ nav.sociallinks {
 
 .bottom p {
     flex: 1 1 70%;
-    /* justify-self: center; */
+
 }
 .sociallinks {
     display: flex;
     flex: 1 1 30%;
+}
+
+.wireframe {
+    display: block;
+    padding: 10px;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    grid-gap: 0.2rem;
+    background-color: #799496;
+
+}
+
+.container1 form.form-contact {
+    justify-self: stretch;
+
+
+}
+
+.container1 div.company-info {
+    justify-self: right ;
+}
+
+.container2 {
+    display: grid;
 }

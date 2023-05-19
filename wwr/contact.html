@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="Contact Us">
+    <meta name="author" content="Kerri Morris">
+    <title>White Water Rafting Company | Contact Us</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo6_200.png" alt="Logo">
+        <nav class="navigation">            
+            <a href="wwr/index.html">Home</a>
+            <a href="wwr/about.html">About Us</a>
+            <a href="wwr/trips.html">Trips</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <main>   
+        <!-- I need this to work as a container and a child. but it's not working that way  -->
+        <div class="container1">Container 1</div>
+            <form class="form-contact">contact form
+                <h1>We want to hear from you!</h1>
+                <div>
+                    <label for="username">Full Name</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div>
+                    <label for ="email">E-Mail Address</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div>
+                    <input type="radio" id="inquiry" name="reason" value="general_inquiry" />
+                    <label for="inquiry">General Inquiry</label>
+
+                    <input type="radio" id="reservation" name="reason" value="reservation" />
+                    <label for="reservation">Phone</label>
+
+                    <input type="radio" id="suggestion" name="reason" value="suggestion" />
+                    <label for="suggestion">Mail</label>
+                </div>
+                <div>
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Type here..."></textarea>                    
+                </div>
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+
+            </form>
+            <!-- <div class="form-contact">container child form-contact</div> -->
+            <div class="company-info">container child company-info
+                <h1>Where you will find us.</h1>
+                <h2>White Water Rafting Company</h2>
+            </div>
+        <div class = "container2">Container2</div>
+
+        
+    </main>
+    <footer class="bottom">
+        <ul>
+            <li class="wireframe">
+                <a href="images/wireframe-contact-us.jpg">Wireframe</a>
+
+            </li>
+        </ul>
+        <p>&copy; 2023 | White Water Rafting Company | Kerri Morris</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/4-Facebook-64.webp" 
+                alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/1_Twitter3_colored_svg-64.webp" 
+                alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/1_Instagram_colored_svg_1-64.webp" 
+                alt="Instagram"></a>
+        </nav>
+        
+    </footer>
+</body>
+</html>
