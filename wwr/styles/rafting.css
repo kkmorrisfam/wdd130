@@ -203,3 +203,8 @@ nav.sociallinks {
 .container2 {
     display: grid;
 }
+
+.guides {
+    display: flex;
+    justify-content: space-evenly;
+}
