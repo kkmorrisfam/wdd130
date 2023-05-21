@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo&family=Permanent+Marker&family=Poppins&display=swap');
 
 :root {
-    --primary-color: #799496;
+    --primary-color: #364344;
     --secondary-color: #dbb4ad; 
     --accent1-color: #acc196;
     --accent2-color: #49475B;
@@ -10,7 +10,7 @@
     --paragraph-font: 'Chivo', sans-serif;
     
     --nav-background-color: #B6C8A9;
-    --nav-link-color: #695658;
+    --nav-link-color: #231d3b;
     --nav-hover-link-color: #cedada;
     --nav-hover-background-color: #695658;
 }
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-
+/* Header All Pages */
 header {
     padding: 2px;
     background-color: var(--accent2-color);
@@ -68,10 +68,31 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+/* Footer All pages */
+.bottom {
+    display: flex;
+    background-color: var(--nav-background-color);
+}
+
+.bottom p {
+    flex: 1 1 70%;
+    text-align: center;
+    
+    vertical-align: middle;
+
+}
+.sociallinks {
+    display: flex;
+    flex: 1 1 30%;
+}
+nav.sociallinks {
+    text-decoration: none;
+}
+
+/* Hero Section About Us Page */
 div.hero {
     position: relative; 
 }
-
 
 /* without this code, the hero image doesn't display correctly.
 with this code, the article image inherit's this size, unless I add .hero to that code*/
@@ -87,6 +108,7 @@ with this code, the article image inherit's this size, unless I add .hero to tha
     display: block;
     text-align: center;
     background-color: #49475B; 
+    color:var(--accent1-color);
     top: 20px;
  }
 
@@ -102,7 +124,6 @@ p {
 
 
 
-/* adding .hero to this code allows the size to change */
 .hero article img {
     width: 25%;
     height: 15%;    
@@ -112,7 +133,7 @@ p {
     border: 1px solid #49475B;   
     box-shadow: 0 0 30px #695658;
 }
-
+/* History Section About Us Page */
 .history {
     display: flex;
     align-items: center;
@@ -137,10 +158,7 @@ p {
 .history p{
     width: 35%
 }
-nav.sociallinks {
-    text-decoration: none;
-}
-
+/* Adventure Section About Us Page */
 .adventure {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -163,61 +181,135 @@ nav.sociallinks {
     align-items: center;
 }
 
-.bottom {
-    display: flex;
-    background-color: var(--nav-background-color);
-}
-
-.bottom p {
-    flex: 1 1 70%;
-
-}
-.sociallinks {
-    display: flex;
-    flex: 1 1 30%;
-}
-
-.wireframe {
-    display: block;
-    padding: 10px;
-}
-
+/* Container 1 Contact Us Page */
 .container1 {
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
     grid-gap: 0.2rem;
-    background-color: #799496;
+    padding-top: 30px;
+    /* background-color: #799496; */
 
 }
-
-.container1 form.form-contact {
-    justify-self: stretch;
-
-
+.container1 p {
+    padding: 0px;
 }
 
-.container1 div.company-info {
+.form-contact {
+    max-width: 500px;
+    margin: 0 3em;
+    padding-left: 20px;    
+}
+
+.form-contact label {
+    display: block;
+    padding: .5em 0;
+    
+}
+.contact-input input {
+    width: 100%;
+    padding: 1em;   
+}
+
+.form-contact textarea {
+    width: 100%;
+}
+
+.contact-purpose {
+    display: flex;
+    padding:.5em;
+    
+}
+.contact-radio {
+    display:flex;
+}
+div.contact-radio label {
+    padding: 1em;
+}
+
+.subscribe {
+    display: flex;
+}
+
+
+button {
+    margin: 1rem;
+    background-color:var(--accent2-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+.form-button {
+    display:flex;
+    justify-content:center;
+}
+
+button:hover {
+    background-color:var(--nav-background-color);
+    color:var(--accent2-color)
+}
+
+
+.company-info {
     justify-self: right ;
 }
 
+.company-name {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #37323a;
+}
+
+/* .company-info h3 {
+    padding: 0 0 0 25px;
+} */
+
+.heading {
+    padding: 20px;
+}
+.map {
+    padding: 2em 0;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
 .container2 {
     display: grid;
 }
-
+/* Expert Section Contact Us Page */
 .experts {
     display: flex;
     justify-content: space-evenly;
 }
 
 .experts img {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
     width: 65%;
-    justify-items: center;
-    align-items: center;
 }
 
-.experts h2 {
-    grid-column: 1/6;
-    grid-row: 1/6;
-    width: 100%;
+.experts figcaption {
     text-align: center;
+}
+
+
+.title-experts {
+    text-align:center;
+    padding: 20px;
+    background-color:var(--nav-background-color)
+
+}
+
+/* Footer Contact Us Page */
+.wireframe {
+    display: block;
+    padding: 10px;
 }
