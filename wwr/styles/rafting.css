@@ -343,6 +343,15 @@ button:hover {
     
 }
 
+.email input {
+    width: 75%;
+    padding: 1em; 
+}
+
+.newsletter h3 {
+    padding: 1em;
+}
+
 /* Trip Page */
 
 .trip-container {
