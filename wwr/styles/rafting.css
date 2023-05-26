@@ -9,7 +9,7 @@
     --heading-font: 'Poppins', sans-serif; 
     --paragraph-font: 'Chivo', sans-serif;
     
-    --nav-background-color: #B6C8A9;
+    --nav-background-color: #c6c9cb;
     --nav-link-color: #231d3b;
     --nav-hover-link-color: #cedada;
     --nav-hover-background-color: #695658;
@@ -23,7 +23,7 @@
  
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    /* max-width: 960px; */
     padding: 20px;
 }
 
@@ -50,6 +50,7 @@ nav {
     display: flex;
     list-style: none;
     background-color: var(--nav-background-color);
+    border-radius:5px;
 }
 
 nav a {
@@ -122,8 +123,6 @@ p {
     padding: 25px;
 }
 
-
-
 .hero article img {
     width: 25%;
     height: 15%;    
@@ -179,6 +178,8 @@ p {
     width: 65%;
     justify-items: center;
     align-items: center;
+    text-align: center;
+    object-fit: cover;
 }
 
 /* Container 1 Contact Us Page */
@@ -262,10 +263,6 @@ button:hover {
     border-bottom: 1px solid #37323a;
 }
 
-/* .company-info h3 {
-    padding: 0 0 0 25px;
-} */
-
 .heading {
     padding: 20px;
 }
@@ -308,6 +305,132 @@ button:hover {
 
 }
 
+/* Home Page */
+
+.container-main {    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'content1 content2 newsletter'
+    'content1 content2 newsletter'
+    'content3 content3 newsletter'
+    'content4 content4 content4';  
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+
+.content1 { grid-area: content1; }
+.content2 { grid-area: content2 }
+.content3 { grid-area: content3; }
+.newsletter { grid-area: newsletter; }
+.content4 { grid-area: content4; }
+
+.container-main > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    /* font-size: 30px; */
+}
+
+.container-main img {
+    
+    display: block;
+    width: 100%;
+    height: 74%;
+    object-fit:cover;
+    
+}
+
+/* Trip Page */
+
+.trip-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 6fr .75fr;
+    grid-template-areas:
+    'head head sidebar'
+    'main main sidebar'        
+    'foot foot foot';  
+    grid-gap: 10px;
+
+}
+
+.trip-head { grid-area: head; }
+.trip-main {grid-area: main;}
+.trip-sidebar {grid-area: sidebar; }
+.trip-foot { grid-area: foot; }
+
+.trip-container > div {
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.trip-container img {    
+    display: block;
+    width: 75%;
+    height: auto;
+    object-fit:cover;    
+}
+
+.trip-head h1 {
+    border-bottom: 1px solid #37323a;
+}
+
+.trip-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr .5fr 1fr .5fr 1fr .25fr;
+    grid-template-areas:
+    'main1-pic main1-pic main1-pic'
+    'main1-desc main1-desc main1-sum'
+    'main2-pic main2-pic main2-pic'
+    'main2-sum main2-desc main2-desc'
+    'main3-pic main3-pic main3-pic'
+    'main3-desc main3-desc main3-sum';
+    grid-gap: 10px;
+    background-color: #c6c9cb;
+    padding: 10px;
+}
+
+.main1-pic {grid-area: main1-pic;}
+.main1-desc {grid-area: main1-desc;}
+.main1-sum {grid-area: main1-sum;}
+.main2-pic {grid-area: main2-pic;}
+.main2-desc {grid-area: main2-desc;}
+.main2-sum {grid-area: main2-sum;}
+.main3-pic {grid-area: main3-pic;}
+.main3-desc {grid-area: main3-desc;}
+.main3-sum {grid-area: main3-sum;}
+
+.trip-main img {
+    width: 100%;
+   
+    object-fit:cover;
+}
+ 
+.trip-main p{
+    padding: 5px 0px;
+    text-align: left;
+}
+
+.trip-sidbar img {
+    display: block;
+    width: 25%;
+    object-fit: cover;
+    align-items: center;
+    justify-items: center;
+    
+}
+.trip-sidebar p {
+    padding: 5px;
+    text-align:center;
+    
+}
+tbody {
+    vertical-align: top;
+}
 /* Footer Contact Us Page */
 .wireframe {
     display: block;

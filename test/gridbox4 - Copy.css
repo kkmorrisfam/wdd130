@@ -1,0 +1,39 @@
+.trip-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: .75fr 1.5fr 1.5fr 1.5fr .75fr;
+    grid-template-areas:
+    'head head'
+    'item1 item2'
+    'item3 item4'
+    'item5 item6'
+    'foot foot';  
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.trip-head { grid-area: head; }
+.trip-item1 { grid-area: trip1; }
+.trip-item2 { grid-area: trip2; }
+.trip-item3 { grid-area: trip3; }
+.trip-item4 { grid-area: trip4; }
+.trip-item5 { grid-area: trip5; }
+.trip-item6 { grid-area: trip6; }
+.trip-foot { grid-area: foot; }
+
+.trip-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    /* font-size: 30px; */
+}
+
+.trip-container img {
+    
+    display: block;
+    width: 100%;
+    height: 74%;
+    object-fit:cover;
+    
+}

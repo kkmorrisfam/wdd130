@@ -1,0 +1,28 @@
+
+.item1 { grid-area: content1; }
+.item2 { grid-area: content2 }
+.item3 { grid-area: content3; }
+.item4 { grid-area: sidebar; }
+.item5 { grid-area: content4; }
+
+.grid-container {
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  'content1 content2 sidebar'
+  'content1 content2 sidebar'
+  'content3 content3 sidebar'
+  'content4 content4 content4';  
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+

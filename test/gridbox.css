@@ -1,0 +1,59 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Chivo&family=Permanent+Marker&family=Poppins&display=swap'); */
+
+.page {
+    display: grid;
+    height: 100vh;
+  /* grid-template-columns: 1.4fr 1.4fr 1.2fr;
+  grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    /* "hero hero hero"
+    "content1 content2 news"
+    "content1 content2 news"
+    "content3 content3 news"
+    "content4 content4 content4 content4";
+     */
+      'hero hero hero'
+      'content1 content2 news'
+      'content1 content2 news'
+      'content3 content3 news'
+      'content4 content4 content4 content4';
+      background-color: azure;
+      
+}
+
+
+.hero {
+  background-color: #8ca0bb;
+  /* grid-area: hero; */
+    grid-area: var(hero);
+    /* grid-area: hero; */
+}
+
+.content1 {
+  background-color: #9ed2cb;
+  /* grid-area: var(content1); */
+  grid-area: content1;
+}
+
+.content2 {
+  background-color: #B269AB;
+  grid-area: var(content2);
+
+}
+
+.news {
+background-color: #695658;
+grid-area: var(news);
+}
+
+.content3 {
+  background-color: #92B6B1;
+  grid-area: var(content3);
+}
+
+.content4 {
+  background-color: #B269AB;
+  grid-area: var(content4);
+}
